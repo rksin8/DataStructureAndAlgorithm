@@ -20,20 +20,23 @@ int main() {
     myList->insertNode(4);
     myList->insertNode(6);
     myList->insertNode(7);
-    myList->print();
+    myList->print(); // @suppress("Ambiguous problem")
+
+    /*
     myList->sortedInsert(3);
     myList->sortedInsert(3);
     myList->sortedInsert(7);
     myList->sortedInsert(8);
     myList->sortedInsert(8);
     myList->print();
+	*/
 
+    cout << "Printing list in reverse order..\n";
 
-   // myList->print();
+    DoublyLinkedListNode* reverseHead = myList->reverseList();
+    myList->print(reverseHead);
 
     delete myList;
-
-
 
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	return 0;

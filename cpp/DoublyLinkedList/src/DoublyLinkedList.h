@@ -22,8 +22,11 @@ public:
 
 	void insertNode(int nodeData);
 	void print();
+	void print(DoublyLinkedListNode *head1);
 
 	void sortedInsert(int data);
+
+	DoublyLinkedListNode* reverseList();
 
 
 };

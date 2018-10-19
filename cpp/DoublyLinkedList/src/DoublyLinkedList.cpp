@@ -36,14 +36,6 @@ void DoublyLinkedList::insertNode(int nodeData) {
 	this->tail = node;
 }
 
-void DoublyLinkedList::print() {
-   DoublyLinkedListNode* tmp = head;
-	while(tmp){
-		std::cout << tmp->data << std::endl;
-		tmp = tmp->next;
-	}
-}
-
 void DoublyLinkedList::sortedInsert(int data) {
 	DoublyLinkedListNode* curr = head;
 
@@ -78,4 +70,35 @@ void DoublyLinkedList::sortedInsert(int data) {
 			curr->prev = newNode;
 		}
 	}
+}
+
+void DoublyLinkedList::print(DoublyLinkedListNode* head1) {
+	   DoublyLinkedListNode* tmp = head1;
+		while(tmp){
+			std::cout << tmp->data << std::endl;
+			tmp = tmp->next;
+		}
+}
+
+void DoublyLinkedList::print() {
+	   DoublyLinkedListNode* tmp = head;
+		while(tmp){
+			std::cout << tmp->data << std::endl;
+			tmp = tmp->next;
+		}
+}
+
+DoublyLinkedListNode* DoublyLinkedList::reverseList() {
+
+	DoublyLinkedListNode* curr = head;
+	DoublyLinkedListNode* tmp = nullptr;
+	while(curr != nullptr){
+		tmp = curr->prev;
+		curr->prev = curr->next;
+		curr->next = tmp;
+		curr = curr->prev;
+	}
+
+	return tmp->prev;
+
 }
