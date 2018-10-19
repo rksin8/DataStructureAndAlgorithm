@@ -17,19 +17,21 @@ int main() {
 
 	DoublyLinkedList* myList = new DoublyLinkedList();
 
-    myList->insertNode(4);
+
+	//myList->insertNode(4);
+	/*
     myList->insertNode(6);
     myList->insertNode(7);
     myList->print(); // @suppress("Ambiguous problem")
 
-    /*
+    */
     myList->sortedInsert(3);
     myList->sortedInsert(3);
     myList->sortedInsert(7);
     myList->sortedInsert(8);
     myList->sortedInsert(8);
-    myList->print();
-	*/
+    myList->print(); // @suppress("Ambiguous problem")
+
 
     cout << "Printing list in reverse order..\n";
 

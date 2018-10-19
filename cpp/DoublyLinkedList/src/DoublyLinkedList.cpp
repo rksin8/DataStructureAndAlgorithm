@@ -41,8 +41,10 @@ void DoublyLinkedList::sortedInsert(int data) {
 
 	DoublyLinkedListNode* newNode = new DoublyLinkedListNode(data);
 
-	if(!curr){
+	if(curr == nullptr){
 		this->head = newNode;
+		this->tail = newNode;
+
 	}else if(data <= curr->data){ // insert at first Node
 		newNode->next = curr;
 		curr->prev = newNode;
