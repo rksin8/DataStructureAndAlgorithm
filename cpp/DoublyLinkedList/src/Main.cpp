@@ -18,7 +18,7 @@ int main() {
 	DoublyLinkedList* myList = new DoublyLinkedList();
 
 
-	//myList->insertNode(4);
+	myList->insertNode(4);
 	/*
     myList->insertNode(6);
     myList->insertNode(7);
