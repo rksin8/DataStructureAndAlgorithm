@@ -41,10 +41,10 @@ double evaluate(std::string input){
 }
 
 
-int main(int argc, char *argv[])
-{
-    std::string s1 ="6523+8*+3+*";
-
-    std::cout << s1 << " = " << evaluate(s1) << std::endl;
-    return 0;
-}
+//int main(int argc, char *argv[])
+//{
+//    std::string s1 ="6523+8*+3+*";
+//
+//    std::cout << s1 << " = " << evaluate(s1) << std::endl;
+//    return 0;
+//}
